@@ -1,0 +1,89 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "Homebrew Test",
+        "abbreviation": "HT",
+        "full": "Homebrew Test",
+        "authors": [
+          "Navilus"
+        ],
+        "convertedBy": [
+          "Navilus"
+        ],
+        "version": "1.0",
+        "url": "",
+        "dateAdded": 1748704610
+      }
+    ]
+  },
+  "monster": [
+    {
+      "name": "Tundra Hunger",
+      "source": "HB",
+      "size": "L",
+      "type": "elemental",
+      "alignment": "unaligned",
+      "ac": [
+        {
+          "ac": 14
+        }
+      ],
+      "hp": {
+        "average": 60,
+        "formula": "8d10+16"
+      },
+      "speed": {
+        "walk": 20,
+        "burrow": 20
+      },
+      "str": 15,
+      "dex": 10,
+      "con": 14,
+      "int": 3,
+      "wis": 10,
+      "cha": 5,
+      "traits": [
+        {
+          "name": "Frozen Camouflage",
+          "entries": [
+            "While motionless in snowy or icy terrain, the Tundra Hunger is indistinguishable from natural land."
+          ]
+        },
+        {
+          "name": "False Ground",
+          "entries": [
+            "A creature walking over the Hunger must succeed on a DC 13 Dexterity (Acrobatics) check or fall prone."
+          ]
+        },
+        {
+          "name": "Tundra Hunger",
+          "entries": [
+            "As a bonus action, the Hunger causes frost-covered tendrils to erupt in a 10-ft radius. Creatures must succeed on a DC 12 Strength save or be pulled 5 ft. toward it and restrained (escape DC 13)."
+          ]
+        },
+        {
+          "name": "Earth Glide",
+          "entries": [
+            "The Hunger can move through unworked earth and ice as if it were difficult terrain."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "name": "Icy Slam",
+          "entries": [
+            "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) bludgeoning + 3 cold damage."
+          ]
+        },
+        {
+          "name": "Frost Maw (Recharge 5\u20136)",
+          "entries": [
+            "The Hunger splits the earth open in a 10-ft. cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 18 (4d8) cold damage on a failed save, or half as much on a success. Creatures that fail are also knocked prone."
+          ]
+        }
+      ],
+      "cr": "2"
+    }
+  ]
+}
