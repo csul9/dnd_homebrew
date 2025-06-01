@@ -116,12 +116,168 @@
 			"environment": [
 				"arctic"
 			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/csul9/dnd_homebrew/refs/heads/main/images/tundra_hunger.png"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://github.com/csul9/dnd_homebrew/blob/main/images/tundra_hunger_token.png"
+			},
 			"damageTags": [
 				"B",
 				"C"
 			],
 			"savingThrowForced": [
 				"dexterity"
+			]
+		},
+		{
+			"name": "Yuki-onna",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fey"
+			},
+			"source": "HomebrewTest",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 42",
+				"average": 105
+			},
+			"speed": {
+				"walk": 30,
+				"hover": 30
+			},
+			"str": 9,
+			"dex": 16,
+			"con": 16,
+			"int": 14,
+			"wis": 13,
+			"cha": 18,
+			"save": {
+				"cha": "+7",
+				"con": "+6"
+			},
+			"skill": {
+				"deception": "+7",
+				"insight": "+4",
+				"stealth": "+6"
+			},
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"paralyzed"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"passive": 14,
+			"languages": [
+				"Common",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"S"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Chilling Aura",
+					"entries": [
+						"Any creature that starts its turn within 10 feet of the Yuki-onna must succeed on a {@dc 15} Constitution saving throw or take 5 ({@damage 1d10}) cold damage and have disadvantage on the first attack roll it makes before the end of its turn."
+					]
+				},
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"The Yuki-onna's innate spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). She can innately cast the following spells:",
+						"- At will: {@spell ray of frost}, {@spell thaumaturgy}, {@spell minor illusion}",
+						"- 3/day: {@spell mirror image}, {@spell hold person}, {@spell  sleet storm}",
+						"- 1/day: {@spell cone of cold}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Freezing Touch",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}12 ({@damage 3d6 + 2}) cold damage, and the target must succeed on a {@dc 15} Constitution saving throw or be slowed (movement halved, −2 AC, no reactions) until the end of its next turn."
+					]
+				},
+				{
+					"name": "Kiss of Winter (1/Day)",
+					"entries": [
+						"The Yuki-onna targets a creature she can see within 30 feet. The target must succeed on a {@dc 15} Charisma saving throw or be cursed. While cursed:",
+						"- Healing the creature receives is halved.",
+						"- It has disadvantage on death saving throws.",
+						"- It is vulnerable to cold damage.",
+						"This curse lasts until removed by remove curse, greater restoration, or similar magic."
+					]
+				}
+			],
+			"environment": [
+				"arctic"
+			],
+			"miscTags": [
+				"MA",
+				"CUR"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/csul9/dnd_homebrew/refs/heads/main/images/yukionna_token.png",
+			"fluff": {
+				"entries": [
+					"{@b Homebrew Creature:} Yuki-onna, a hauntingly beautiful fey who haunts snow-covered forests, luring travelers to their doom with supernatural grace and deceptive illusions."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/csul9/dnd_homebrew/refs/heads/main/images/yukionna.png"
+						}
+					}
+				]
+			},
+			"bonus": [
+				{
+					"name": "Froststep {@recharge 4|6}",
+					"entries": [
+						"As a The Yuki-onna teleports up to 60 feet to an unoccupied space she can see. An illusory copy appears in her original location until the start of her next turn. A creature can discern the illusion with a successful {@dc 15} Intelligence (Investigation) check."
+					]
+				}
+			],
+			"damageTags": [
+				"C"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution"
 			]
 		}
 	]
